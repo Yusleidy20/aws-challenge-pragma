@@ -1,0 +1,16 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    url: jdbc:mysql://users-db-aws.cjiugaimi2wb.us-east-2.rds.amazonaws.com:3306/users_aws_db
+    username: useraws
+    password: 29522628
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
